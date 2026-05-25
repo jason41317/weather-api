@@ -1,5 +1,16 @@
 # Weather API (Laravel) — Installation Guide
 
+## Architectural Approach
+
+This project follows a simple but scalable service-oriented approach:
+
+* Controller Layer → Handles HTTP requests and formats API responses (no business logic)
+* Service Layer → Contains all business logic, including API calls to OpenWeather
+* DTO (Data Transfer Object) → Ensures structured and consistent weather data across the app
+* Separation of Concerns → Each layer has a single responsibility to keep the code maintainable and testable
+
+This approach ensures the system is clean, testable, and safe for both Docker and production environments.
+
 # Requirements
 
 ## Local (Without Docker)
